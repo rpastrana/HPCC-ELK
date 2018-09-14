@@ -1,0 +1,17 @@
+###################### Filebeat Configuration Example For harvesting HPCC ESP logs#########################
+  
+#=========================== Filebeat prospectors =============================
+#Harvest all "TxSummary" entries from the current day ESP component logs
+filebeat.prospectors:
+- type: log
+ enabled: true
+ paths:
+   - /var/log/HPCCSystems/*/esp.log
+ fields:
+   component: esp
+ fields_under_root: true
+ encoding: plain
+ include_lines: ['([A-Z-0-9]{8})\s+(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{3})\s+(\d+)\s+(\d+)\s+(\"TxSummary)' ]
+ multiline.pattern: ([A-Z-0-9]{8})\s+(\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}.\d{3})\s+(\d+)\s+(\d+)\s+(\")
+ multiline.negate: true
+ multiline.match: after
