@@ -1,0 +1,16 @@
+[
+  {
+    "_id": "b7828950-b82b-11e8-924c-5bfa4c777352",
+    "_type": "visualization",
+    "_source": {
+      "title": "HPCC - Seg Faults",
+      "visState": "{\"title\":\"HPCC - Seg Faults\",\"type\":\"metrics\",\"params\":{\"axis_formatter\":\"number\",\"axis_max\":\"\",\"axis_min\":\"0\",\"axis_position\":\"left\",\"background_color_rules\":[{\"value\":0,\"background_color\":\"rgba(104,188,0,1)\",\"color\":\"rgba(255,255,255,1)\",\"id\":\"e8db0620-b82c-11e8-92c9-bba6f1bdbbea\",\"opperator\":\"lte\"},{\"value\":0,\"background_color\":\"rgba(159,5,0,1)\",\"color\":\"rgba(15,20,25,1)\",\"id\":\"5f616730-b855-11e8-aa47-bf531b88ca0d\",\"opperator\":\"gte\"}],\"bar_color_rules\":[{\"id\":\"acddd0d0-b82c-11e8-92c9-bba6f1bdbbea\"}],\"filter\":\"SignalCode=\\\"11\\\"\",\"gauge_color_rules\":[{\"value\":0,\"gauge\":\"rgba(104,188,0,1)\",\"id\":\"4ef2c3b0-1b91-11e7-bec4-a5e9ec5cab8b\",\"opperator\":\"lte\"},{\"value\":0,\"gauge\":\"rgba(211,49,21,1)\",\"id\":\"ec655040-1b91-11e7-bec4-a5e9ec5cab8b\",\"opperator\":\"gte\"}],\"gauge_inner_width\":10,\"gauge_max\":\"1\",\"gauge_style\":\"half\",\"gauge_width\":10,\"id\":\"4c9e2550-1b91-11e7-bec4-a5e9ec5cab8b\",\"index_pattern\":\"hpcc-signal*\",\"interval\":\"1d\",\"series\":[{\"axis_position\":\"right\",\"chart_type\":\"line\",\"color\":\"rgba(77,188,0,1)\",\"fill\":0.5,\"filter\":\"\",\"formatter\":\"number\",\"id\":\"4c9e2551-1b91-11e7-bec4-a5e9ec5cab8b\",\"label\":\"Seg Faults\",\"line_width\":1,\"metrics\":[{\"id\":\"314848a0-b82d-11e8-92c9-bba6f1bdbbea\",\"type\":\"count\",\"field\":\"offset\"}],\"point_size\":1,\"seperate_axis\":0,\"split_filters\":[{\"filter\":\"source:\\\"*roxie.log\\\"\",\"label\":\"Roxie\",\"color\":\"rgba(211,49,21,1)\",\"id\":\"7c573810-b82d-11e8-92c9-bba6f1bdbbea\"},{\"filter\":\"source:\\\"*esp.log\\\"\",\"label\":\"ESP\",\"color\":\"rgba(211,49,21,1)\",\"id\":\"8e2ef000-b82d-11e8-92c9-bba6f1bdbbea\"},{\"filter\":\"source:\\\"*thormaster.*.log\\\"\",\"label\":\"ThorMaster\",\"color\":\"rgba(211,49,21,1)\",\"id\":\"dba63ad0-b857-11e8-8df8-95a8c2ea9a21\"},{\"filter\":\"source:\\\"*thorslave.*.log\\\"\",\"label\":\"ThorSlave\",\"color\":\"rgba(211,49,21,1)\",\"id\":\"095469c0-b858-11e8-8df8-95a8c2ea9a21\"},{\"filter\":\"source:\\\"*DAFILESRV.*.log\\\"\",\"label\":\"DAFILESRV\",\"color\":\"rgba(211,49,21,1)\",\"id\":\"3c0f7940-b858-11e8-8df8-95a8c2ea9a21\"},{\"filter\":\"source:\\\"*DaServer.log\\\"\",\"label\":\"DaServer\",\"color\":\"rgba(77,188,0,1)\",\"id\":\"6343f130-b858-11e8-8df8-95a8c2ea9a21\"}],\"split_mode\":\"filters\",\"stacked\":\"none\",\"terms_field\":\"source.keyword\",\"terms_order_by\":\"314848a0-b82d-11e8-92c9-bba6f1bdbbea\"}],\"show_grid\":0,\"show_legend\":1,\"time_field\":\"@timestamp\",\"type\":\"gauge\"},\"aggs\":[]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"query\":{\"query_string\":{\"query\":\"*\"}},\"language\":\"lucene\"},\"filter\":[]}"
+      }
+    }
+  }
+]
