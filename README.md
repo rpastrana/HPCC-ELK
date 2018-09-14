@@ -11,4 +11,4 @@ Kibana
         /dashboard      - Various aggregations of HPCC log visualizations
 </pre>
 
-#Any/all comments/question and contributions encouraged!!
+# Contributions encouraged!!
