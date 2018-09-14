@@ -1,0 +1,33 @@
+# This file is an example configuration file highlighting only the most common
+# options. The filebeat.reference.yml file from the same directory contains all the
+# supported options with more comments. You can use it as a reference.
+#
+# You can find the full configuration reference here:
+# https://www.elastic.co/guide/en/beats/filebeat/index.html
+
+# For more available modules and options, please see the filebeat.reference.yml sample
+# configuration file.
+
+#=========================== Filebeat prospectors =============================
+
+filebeat.prospectors:
+
+# harvest all "Signal:" log entries from major HPCC components
+- type: log
+  enabled: true
+  paths:
+    - /var/log/HPCCSystems/*/esp.log
+    - /var/log/HPCCSystems/*/roxie.log
+    - /var/log/HPCCSystems/*/thorslave.*.log
+    - /var/log/HPCCSystems/*/thorsmaster.*.log
+    - /var/log/HPCCSystems/*/eclagent.*.log
+    - /var/log/HPCCSystems/*/dfuserver.log
+    - /var/log/HPCCSystems/*/eclccserver.log
+    - /var/log/HPCCSystems/*/eclscheduler.log
+    - /var/log/HPCCSystems/*/DAFILESRV.*.log
+    - /var/log/HPCCSystems/*/saserver.log
+  fields:
+    component: hpcc-signal
+  fields_under_root: true
+  encoding: plain
+include_lines: ['\"Signal:' ]
