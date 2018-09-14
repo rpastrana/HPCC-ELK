@@ -26,6 +26,7 @@ filebeat.prospectors:
     - /var/log/HPCCSystems/*/eclscheduler.log
     - /var/log/HPCCSystems/*/DAFILESRV.*.log
     - /var/log/HPCCSystems/*/saserver.log
+    - /var/log/HPCCSystems/*/server/DaServer.log
   fields:
     component: hpcc-signal
   fields_under_root: true
